@@ -1,0 +1,11 @@
+<div class="container">
+  <form class="login__form" [formGroup] = "loginForm">
+    <h4>Login here!</h4>
+    <input type="text" placeholder="Enter email" [formControl] = "email"  />
+    <h5 class="text-red" [hidden]="email.valid || email.untouched">Email is required and should be correct!</h5>
+    <input type="password" placeholder="Enter password" [formControl] = "password"  />
+    <h5 class="text-red" [hidden]="password.valid || password.untouched">Password is required and should be greater than 6</h5>
+    <button class="btn__green" [disabled]="loginForm.invalid" (click)="loginFunction()">Login</button>
+    <button class="btn__red" (click)="resetLoginFunction()">Reset</button>
+  </form>
+</div>

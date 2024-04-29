@@ -1,0 +1,21 @@
+.bin {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin: 20px;
+}
+
+.bin h5 {
+  color: #007bff;
+  margin-top: 0;
+}
+
+.bin p {
+  margin: 10px 0;
+}
+
+div h3{
+  margin: 20px;
+}

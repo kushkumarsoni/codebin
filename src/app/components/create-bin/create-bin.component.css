@@ -1,0 +1,90 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.bin__form {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 30px;
+}
+
+h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+input[type="text"],textarea{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+h5.text-red {
+  color: red;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn__green {
+  background-color: #4caf50;
+  color: white;
+}
+
+.btn__red {
+  background-color: #f44336;
+  color: white;
+  margin-left: 10px;
+}
+
+.btn__green:disabled {
+  background-color: #bfbfbf; /* Change background color */
+  color: #666666; /* Change text color */
+  cursor: not-allowed; /* Change cursor style */
+}
+
+.hero {
+  background-color: #f8f9fa;
+  padding: 50px;
+  text-align: center;
+}
+
+.hero h2 {
+  color: #007bff;
+}
+
+.bin-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.bin {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+}
+
+.bin h3 {
+  color: #007bff;
+  margin-top: 0;
+}
+
+.bin p {
+  margin: 10px 0;
+}

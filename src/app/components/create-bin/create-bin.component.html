@@ -1,0 +1,11 @@
+<div class="container">
+  <form class="bin__form" [formGroup] = "binForm">
+    <h4>Create Bin Snippet here!</h4>
+    <input type="text" placeholder="Enter title" [formControl] = "title"  />
+    <h5 class="text-red" [hidden]="title.valid || title.untouched">Title is required.</h5>
+    <textarea  placeholder="Enter code" [formControl] = "code" rows="10"></textarea>
+    <h5 class="text-red" [hidden]="code.valid || code.untouched">Code is required .</h5>
+    <button class="btn__green" [disabled]="binForm.invalid" (click)="binFunction()">Create</button>
+    <button class="btn__red" (click)="resetBinFunction()">Cancel</button>
+  </form>
+</div>

@@ -1,0 +1,35 @@
+<main>
+  @if(results.length > 0) {
+    <section class="hero">
+      <ul class="row">
+        @for(result of results;track result.id) {
+          <li class="card-body">
+            <a [routerLink]="['snippet',result?.id]"><h5 class="card-title"> {{ result?.title }}</h5></a>
+          </li>
+        }
+      </ul>
+    </section>
+  }
+  <section class="hero">
+    <h2>Discover Our Services</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer adipiscing erat eget risus sollicitudin pellentesque et non erat.</p>
+    <a href="#" class="btn">Learn More</a>
+  </section>
+  <section class="features">
+    <div class="feature">
+      <h3>Feature 1</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="feature">
+      <h3>Feature 2</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="feature">
+      <h3>Feature 3</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </section>
+</main>
+<footer>
+  <p>&copy; 2024 Company Name. All rights reserved.</p>
+</footer>

@@ -1,0 +1,11 @@
+<p>differ-demo works!</p>
+
+@defer(on viewport) {
+  <app-heavy></app-heavy>
+}@placeholder{
+  <h5>This is place holder</h5>
+} @loading (after 100ms; minimum 1s) {
+ <h5>Loading...</h5>
+}@error{
+  <h5>Error while loading data...</h5>
+}
